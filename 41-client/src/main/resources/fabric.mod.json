@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "fortyone-client",
+  "version": "${version}",
+  "name": "41 Client",
+  "description": "41 Client for Minecraft 1.21.11",
+  "authors": [
+    "41 Client"
+  ],
+  "license": "MIT",
+  "icon": "assets/fortyone-client/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.anticheatqa.AntiCheatQA"
+    ]
+  },
+  "mixins": [
+    "anticheat-qa.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
